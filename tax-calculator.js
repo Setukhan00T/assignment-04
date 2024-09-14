@@ -4,7 +4,7 @@ function incomeTax(income, expense) {
    return "Error: Income must be a positive number";
   } 
   else if (typeof expense !== "number" || expense <0) {
-    return "Error: Expense must be a number";
+    return "Error: Expense must be a positive number";
   }
   const tax = (income - expense) * taxRate;
   return tax;
